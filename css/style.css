@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-color: #003038;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
+
+.colorGreen {
+    color: rgb(56, 194, 56);
+}
+
+.colorRed {
+    color: red;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1em;
+    margin-bottom: 2rem;
+    border: 4px solid #fff;
+}
+
+header .newGame {
+    text-align: center;
+    background-color: #40798C;
+    color: #fff;
+    width: 8em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    border-radius: 3%;
+    padding: 10px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+header .newGame:hover {
+    color: #000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left {
+    position: relative;
+    width: 100%;
+}
+
+.left .square {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+}
+
+#showNumber {
+    text-align: center;
+    font-size: 10em;
+    margin: 0;
+
+    color: #fff;
+}
+
+.guess {
+    text-align: center;
+}
+
+#number {
+    padding: 1em;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    background-color: #003038;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+::-moz-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+:-ms-input-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+:-moz-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+#check {
+    width: 8em;
+    display: block;
+    border: none;
+    padding: .8em;
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 600;
+    background-color: #40798C;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3%;
+    transition: all .3s linear;
+}
+
+#check:hover {
+    color: #000;
+}
+
+.right {
+    color: #fff;
+}
+
+.right {
+    margin: 0 auto;
+    width: 100%;
+    padding: 3em;
+}
+
+.right h2 {
+    margin-bottom: 3em;
+    color: #70A9A1;
+}
+
+.right p {
+    font-size: 31px;
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 1200px) 
+and (max-width: 1600px)  {
+    main {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header h1 {
+        padding: 1.5em;
+    }
+
+    .right h2 {
+        font-size: 32px;
+    }
+
+    .guess {
+        margin-top: 5%;
+    }
+
+    #showNumber {
+        left: 46%;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%
+    }
+}
